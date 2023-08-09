@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background-color: rgb(24, 42, 44);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 13px;
+}
+
+.wrapper{
+    border-radius: 7px;
+    border: 1px solid #d8d5d5;
+}
+
+.wrapper .text_input{
+    display: flex;
+    border-bottom: 1px solid #d8d5d5;
+}
+
+.text_input .to_text{
+    border-left: 1px solid #d8d5d5;
+}
+
+.text_input textarea{
+    height: 250px;
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+    padding: 10px 13px;
+    border-radius: 7px;
+}
+
+.text_input textarea::placeholder{
+    color: #aca8a8;
+}
+
+.contorls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contorls{
+    list-style: none;
+    padding: 12px 14px;
+}
+
+.contorls .row .icons{
+    width: 40%;
+}
+
+.contorls .row .icons i{
+    width: 50px;
+    color: gray;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.contorls .row.from .icons{
+    padding-right: 14px;
+    border-right: 1px solid #aca8a8;
+}
+
+
+.contorls .row.to .icons{
+    padding-left: 14px;
+    border-left: 1px solid #aca8a8;
+}
+
+.contorls .row select{
+    color: #aca8a8;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 7px;
+}
+
+.text_input textarea::-webkit-scrollbar{
+    width: 5px;
+}
+
+.contorls .row select::-webkit-scrollbar{
+    width: 10px;
+}
+
+.text_input textarea::-webkit-scrollbar-track .contorls .row select::-webkit-scrollbar-track{
+    background: #f5f4f4;
+}
+
+.text_input textarea::-webkit-scrollbar-thumb{
+    background: #dbdadadd;
+    border-radius: 10px;
+}
+
+
+.contorls .row select::-webkit-scrollbar-thumb{
+    background: #8d8c8c;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.contorls .exchange{
+    cursor: pointer;
+    color: #ada8a8;
+    font-size: 18px;
+    transition: transfrom 0.2s ease;
+}
+
+.contorls i:active{
+    transform: scale(0.9);
+}
+
+
+.container button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(24, 42, 44);
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    margin-top: 15px;
+
+}
+ 
+
+@media (max-width: 600px){
+    .container{
+        padding: 20px;
+    }
+
+    .wrapper .text_input{
+        flex-direction: column;
+    }
+
+    .text_input .to_text{
+        border-left: 0;
+        border-top: 1px solid #c4c0c0;
+    }
+
+    .text_input textarea{
+        height: 200px ;
+    }
+
+    .contorls .row .icons{
+        display: none;
+    }
+
+    .container button {
+        padding: 12px;
+        font-size: 16px;
+      }
+    
+      .controls .row select {
+        font-size: 16px;
+      }
+    
+      .controls .exchange {
+        font-size: 14px;
+      }
+    
+}
